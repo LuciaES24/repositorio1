@@ -5,5 +5,5 @@ fun main(args: Array<String>) {
     libro1.imprimirLibro()
     libro2.imprimirLibro()
     libro3.imprimirLibro()
-    ConjuntosLibros().imprimirLibreria()
+    ConjuntosLibros().imprimir()
 }
