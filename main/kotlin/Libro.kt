@@ -13,8 +13,14 @@ class Libro (nuevoAutor : String, nuevoTitulo : String, numeroPaginas : Int, nue
         get():Int{
             return field
         }
-    fun imprimirLibro(){
-        println("El libro $titulo fue escrito por $autor. Tiene $paginas páginas y la calificación que le has dado es un $calificacion")
+
+    constructor(otroLibro:Libro):this(otroLibro.titulo,otroLibro.autor,otroLibro.paginas,otroLibro.calificacion){
+
     }
+
+    override fun toString(): String {
+        return "Libro(titulo=$titulo, autor=$autor, paginas=$paginas,nota=$calificacion)"
+    }
+
 }
 
