@@ -1,4 +1,10 @@
-class Mano {
+class Mano (size : Int) {
     var maximoCartas = 3
-    var cartasMano =
+    var listaCartas = mutableListOf<Carta>()
+
+    constructor():this(3){
+
+    }
+
+
 }
